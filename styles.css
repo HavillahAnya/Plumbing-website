@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f3f7ec;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  width: 60px;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.main-menu ul {
+  display: flex;
+}
+
+.main-menu ul li {
+  margin-right: 20px;
+}
+
+.main-menu a {
+  color: #006989;
+}
+
+.main-menu a:hover {
+  border-bottom: 1px solid #006989;
+}
+
+.main-menu .btn {
+  background-color: #e88d67;
+  color: white;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.main-menu .btn:hover {
+  border: none;
+  opacity: 0.8;
+}
+
+/* Hero */
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 105, 137, 0.750), rgba(0, 105, 137, 0.750)), url("./images/pipes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 90vh;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero .text-box {
+  max-width: 500px;
+}
+
+.hero .main-heading {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero .form {
+  background-color: #fff;
+  color: #333;
+  padding: 40px;
+  max-width: 400px;
+}
+
+.hero .form h2 {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero .form-control {
+  margin: 30px 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+.form .input {
+  border: 0;
+  border-bottom: 2px solid #005c78;
+  width: 100%;
+  padding: 6px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form input[type="submit"] {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #e88d67;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+}
+
+.form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Commitment */
+.commitment {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #006989;
+}
+
+.short-text {
+  font-weight: bold;
+}
+
+.commitment .commitment-heading {
+  font-weight: 100;
+  margin: 15px 0;
+}
+
+.short-line {
+  width: 70px;
+  height: 3px;
+  background-color: #005c78;
+}
+
+.commitment .card-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #005c78;
+  color: #f3f7ec;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.card-no {
+  font-weight: bold;
+  color: #e88d67;
+}
+
+.card-title {
+  margin: 10px 0;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-grid {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer .mission {
+  max-width: 400px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.menu ul li {
+  margin-bottom: 5px;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu a:hover {
+  color: #e88d67;
+  border-bottom: 1px solid #e88d67;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#copyright {
+  text-align: center;
+}
+
+/* Utility Classses */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Media Query */
+
+@media(max-width: 900px) {
+  .navbar {
+    padding: 40px 0;
+  }
+  .navbar .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar .main-menu ul {
+    flex-direction: column;
+  }
+
+  .main-menu {
+    margin-left: 30px;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  .main-menu .btn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hero {
+    height: 900px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero .text-box {
+    text-align: center;
+  }
+
+  .commitment .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+  }
+}
